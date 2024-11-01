@@ -1,6 +1,3 @@
-Here’s how you can make the "Drive" text a hyperlink:
-
-```markdown
 # Semantic Search with SBERT
 
 This repository contains a semantic search tool using a Sentence-BERT (SBERT) model to find books based on similarity scores. The tool loads book data and allows searching for relevant titles using pre-trained or fine-tuned SBERT models with FAISS for efficient similarity search.
