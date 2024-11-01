@@ -37,9 +37,6 @@ except ValueError as e:
     print(e)
     sys.exit(1)
 
-# Import data
-df = pd.read_csv('english_books_faiss.csv', memory_map=True)
-
 # Run the search with the provided query, top_k, and model
 results = search(args.query, top_k=args.top_k, index=index, model=model)
 
