@@ -1,3 +1,6 @@
+Here’s how you can make the "Drive" text a hyperlink:
+
+```markdown
 # Semantic Search with SBERT
 
 This repository contains a semantic search tool using a Sentence-BERT (SBERT) model to find books based on similarity scores. The tool loads book data and allows searching for relevant titles using pre-trained or fine-tuned SBERT models with FAISS for efficient similarity search.
@@ -12,9 +15,8 @@ To run this project, first ensure you have the required Python packages installe
 pip install -r requirements.txt
 ```
 
-###  Weights and indices
-Downoad Weights and indices:
-https://drive.google.com/drive/folders/1PEgyUvEhFEMS7Qc4OpSnR7-VYLyfOzf6
+### Weights and Indices
+Download Weights and Indices from [Drive](https://drive.google.com/drive/folders/1PEgyUvEhFEMS7Qc4OpSnR7-VYLyfOzf6).
 
 ### Implementation
-see semanticSeach-Example.ipynb
+See `semanticSearch-Example.ipynb`
