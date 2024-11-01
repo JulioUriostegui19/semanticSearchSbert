@@ -10,3 +10,7 @@ To run this project, first ensure you have the required Python packages installe
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Implementation
+see for semanticSeach-Example.ipynb
