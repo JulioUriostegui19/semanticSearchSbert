@@ -14,7 +14,9 @@ import numpy as np
 import time
 # This is only a dummy function and it should be change to get
 #information from the Database
-def fetch_info(dataframe_idx):
+def fetch_info(dataframe_idx, df):
+    # import data
+    df = pd.read_csv('english_books_faiss.csv',memory_map=True)
     info = df.iloc[dataframe_idx]
     meta_dict = {}
     meta_dict['book_title'] = info['book_title']
