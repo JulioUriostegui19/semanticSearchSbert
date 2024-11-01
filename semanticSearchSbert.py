@@ -6,7 +6,7 @@
 # email: uriosteguisanchez@campus.tu-berlin.de                   #
 #----------------------------------------------------------------#
 """
-from search import  
+from search import search
 import argparse
 from pprint import pprint
 from sentence_transformers import SentenceTransformer
