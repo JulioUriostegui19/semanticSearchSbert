@@ -13,4 +13,4 @@ pip install -r requirements.txt
 ```
 
 ### Implementation
-see for semanticSeach-Example.ipynb
+see semanticSeach-Example.ipynb
