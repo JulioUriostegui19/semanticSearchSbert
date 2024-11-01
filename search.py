@@ -7,6 +7,11 @@
 #----------------------------------------------------------------#
 """
 # Auxiliary functions
+from sentence_transformers import SentenceTransformer
+import faiss
+import pandas as pd
+import numpy as np
+import time
 # This is only a dummy function and it should be change to get
 #information from the Database
 def fetch_info(dataframe_idx):
