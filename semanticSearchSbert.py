@@ -30,7 +30,7 @@ try:
         model = SentenceTransformer("msmarco-distilbert-base-dot-prod-v3")
     elif args.model_type == "fine_tuned":
         index = faiss.read_index('book_plot_finetuned.index')
-        model = SentenceTransformer('../fine_tuned/sbert_semantic_search-model')
+        model = SentenceTransformer('fine_tuned/sbert_semantic_search-model')
     else:
         raise ValueError("Invalid model type specified. Choose between 'original' and 'fine_tuned'.")
 except ValueError as e:
