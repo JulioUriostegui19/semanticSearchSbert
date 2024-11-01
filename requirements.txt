@@ -1,0 +1,6 @@
+sentence-transformers==2.2.1
+faiss-gpu
+pandas
+numpy
+tqdm
+
