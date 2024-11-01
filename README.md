@@ -12,5 +12,9 @@ To run this project, first ensure you have the required Python packages installe
 pip install -r requirements.txt
 ```
 
+###  Weights and indices
+Downoad Weights and indices:
+https://drive.google.com/drive/folders/1PEgyUvEhFEMS7Qc4OpSnR7-VYLyfOzf6
+
 ### Implementation
 see semanticSeach-Example.ipynb
