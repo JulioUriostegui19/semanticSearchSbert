@@ -14,6 +14,7 @@ import faiss
 import pandas as pd
 import numpy as np
 import sys
+import json
 
 # Argument parsing setup
 parser = argparse.ArgumentParser(description="Search for books based on a query and model type.")
@@ -42,6 +43,14 @@ results = search(args.query, top_k=args.top_k, index=index, model=model)
 
 pd.DataFrame(results).to_csv('results.csv')
 
-print("\nResults:")
-for result in results:
-    pprint(result)
+# Transform into a dictionary of dictionaries with enumerated keys for JSON
+formatted_data = {f"{i}": entry for i, entry in enumerate(data)}
+
+# Save to a JSON file
+output_file  = "results.json"
+with open(output_file, "w") as file:
+    json.dump(formatted_data, output_file, indent=4)  # Use indent=4 for formatting
+    
+#print("\nResults:")
+#for result in results:
+#    pprint(result)
