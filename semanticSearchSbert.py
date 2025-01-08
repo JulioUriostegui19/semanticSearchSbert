@@ -49,7 +49,7 @@ formatted_data = {f"{i}": entry for i, entry in enumerate(results)}
 # Save to a JSON file
 output_file  = "results.json"
 with open(output_file, "w") as file:
-    json.dump(formatted_data, output_file, indent=4)  # Use indent=4 for formatting
+    json.dump(formatted_data, file, indent=4)  # Use indent=4 for formatting
     
 #print("\nResults:")
 #for result in results:
