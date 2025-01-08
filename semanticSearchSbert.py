@@ -20,7 +20,7 @@ import json
 parser = argparse.ArgumentParser(description="Search for books based on a query and model type.")
 parser.add_argument("--query", type=str, required=True, help="The search query")
 parser.add_argument("--model_type", type=str, required=True, help="Choose between 'original' and 'fine_tuned' model")
-parser.add_argument("--top_k", type=int, default=5, help="The number of top results to return")
+parser.add_argument("--top_k", type=int, default=40000, help="The number of top results to return")
 
 args = parser.parse_args()
 
@@ -41,10 +41,10 @@ except ValueError as e:
 # Run the search with the provided query, top_k, and model
 results = search(args.query, top_k=args.top_k, index=index, model=model)
 
-pd.DataFrame(results).to_csv('results.csv')
+#pd.DataFrame(results).to_csv('results.csv')
 
 # Transform into a dictionary of dictionaries with enumerated keys for JSON
-formatted_data = {f"{i}": entry for i, entry in enumerate(data)}
+formatted_data = {f"{i}": entry for i, entry in enumerate(results)}
 
 # Save to a JSON file
 output_file  = "results.json"
